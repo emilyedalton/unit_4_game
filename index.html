@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>An empty page</title>
+</head>
+<body>
+<h1>Enter a random letter</h1>
+<!-- <form>
+    <input>
+</form> -->
+<button id="Ruby">Reset</button>
+<button id="Emerald">Reset</button>
+<button id="Diamond">Reset</button>
+<button id="Opal">Reset</button>
+
+<div id = "letterTrack"></div>
+ 
+  <script>
+  // global varibles 
+var goalRandom = 0;
+var crystalRandom = 0;
+var totalScore = 0; 
+var newtotalScore = 0;
+var crystal1Rand = 0;
+var crystal2Rand = 0;
+var crystal3Rand = 0;
+var crystal4Rand = 0;
+  // functions 
+function goalNum (){
+    goalRandom = Math.floor((Math.random() * (120 - 19) + 19));
+console.log("I am a random number " + goalRandom );
+
+}
+
+function crystalNum(){
+   var crystalRandom = Math.floor((Math.random() * 10) + 1);
+console.log("I am the random number for the crystals " + crystalRandom);
+return crystalRandom;
+}
+
+function crystalResult1(){
+var crystal1Rand = crystalNum();
+console.log ("I am the random number for the first crystal button " + crystal1Rand);
+return crystal1Rand;
+}
+
+function crystalResult2(){
+var crystal2Rand = crystalNum();
+console.log ("I am the random number for the second crystal button " + crystal2Rand);
+return crystal2Rand;
+}
+
+ function crystalResult3(){
+ var crystal3Rand = crystalNum ();
+ console.log ("I am the random number for the thrid crystal button " + crystal3Rand);
+ return crystal3Rand;
+
+ }
+
+function crystalResult4(){
+var crystal4Rand = crystalNum();
+console.log ("I am the random number for the forth crystal button " + crystal4Rand);
+return crystal4Rand;
+}
+
+// function adder(){ Generating the right values but not adding correctly need to increment the total score with the number produced by the functions
+   
+    $("#Ruby").on("click",function(){
+       totalScore += crystalResult1() 
+        console.log("your new score is " + totalScore);
+   
+    $("#Emerald").on("click",function(){
+        totalScore += crystalResult2() 
+        console.log("your new score is " + totalScore);
+
+    $("#Diamond").on("click",function(){
+        totalScore += crystalResult3() 
+        console.log("your new score is " + totalScore); 
+    
+     $("#Opal").on("click",function(){
+        totalScore += crystalResult4() 
+        console.log("your new score is " + totalScore); 
+           
+    });
+});
+
+});
+});
+function GameOver(){
+if(totalScore === goalRandom){
+
+    document.write("GameOver")
+}
+
+
+}
+goalNum(); 
+
+crystalNum();
+
+crystalResult1();
+
+crystalResult2();
+
+crystalResult3(); 
+
+crystalResult4();
+
+
+
+// adder();
+
+    </script> 
+ 
+</body>
+
+
+
+</html>
