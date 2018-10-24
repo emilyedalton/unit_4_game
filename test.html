@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>An empty page</title>
+</head>
+<body onlonad = "InitalizeGame()" >
+<h1>Enter a random letter</h1>
+<!-- <form>
+    <input>
+</form> -->
+<button class="crystal">Crystal 1</button>
+<button class="crystal">Crystal 2</button>
+<button class="crystal">Crystal 3</button>
+<button class="crystal">Crystal 4</button>
+
+<div id = "Scorebox"></div>
+ 
+  <script type ="text/javascript">
+
+ $(document).ready(function() {
+
+
+// global varibles 
+//random number that will be what the player is trying to match
+var goalRandom = 0;
+//A random number generated that will go into the crystals. 
+var wins = 0; 
+var losses = 0;
+var totalScore = 0;
+var crystal1Rand= 0;
+var crystal2Rand= 0;
+var crystal3Rand= 0;
+var crystal4Rand= 0;
+
+//functions what does calculator game do that crystal game needs to do ? 
+// It takes buttons that already have values and when you click them it displays thoes numbers on the screen as a string. Sets  It checks to see if an operator has been chosen then based on that moves to assign value to the subsequent number. 
+function win (){}
+
+function lose(){}
+
+function reset(){}
+
+function initalizeGame(){
+
+}
+//on click, generate a random number. Assign that number to a button. Increment the totalscore by that number. 
+
+    $(".crystal").on("click",function(){
+        console.log("hello")
+    }
+    // var crystal1Rand = Math.floor(Math.random() *12)+1; 
+
+    // console.log("I am your first random number  " + crystal1Rand)
+    
+    // $(".crystal")(this).val(crystal1Rand);
+   
+    // totalScore += crystal1Rand;
+    
+    // console.log("your new score is " + totalScore);
+    win ()
+    lose()
