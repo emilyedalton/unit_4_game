@@ -92,7 +92,6 @@ $(document).ready(function () {
 
     });
 
-    console.log("I am your second random number " + crystal2Rand)
     $(".Emerald").on("click", function () {
         console.log("I am your second random number  " + crystal2Rand)
         totalScore += crystal2Rand;
@@ -104,7 +103,6 @@ $(document).ready(function () {
 
 
 
-    console.log("I am yoru third random number " + crystal3Rand)
     $(".Diamond").on("click", function () {
         console.log("I am your third random number  " + crystal3Rand)
         totalScore += crystal3Rand;
@@ -115,7 +113,6 @@ $(document).ready(function () {
     });
 
 
-    console.log("I am your fourth random number" + crystal4Rand)
     $(".Opal").on("click", function () {
         console.log("I am your fourth random number  " + crystal4Rand)
         totalScore += crystal4Rand;
