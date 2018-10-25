@@ -23,9 +23,9 @@ var computerPickNumber = 0;
 $(document).ready(function () {
 
 
-    //Emily, this initialize each crystal variable and computer pick number to a random number
-    //It sets the totalScore to 0. It output the computer picked number to the div. 
-    //this preserves all my global variables to be unchanged.
+   // initializes each crystal variable and computer selected number to a random number
+    //It sets the totalScore to 0. It outputs the computer picked number to the div. 
+    //this preserves all global variables to be unchanged.
     function initializeGame() {
         //these global variables below are set and preserved for the game.
         crystal1Rand = Math.floor(Math.random() * 12) + 1;
@@ -36,7 +36,7 @@ $(document).ready(function () {
         computerPickNumber = Math.floor((Math.random() * (120 - 19) + 19));
         totalScore = 0;
     
-        //Emily, we need to let the user see the computer picked number
+        //user sees  see the computer seleced number
         $("#newComputerPickNumber").html(computerPickNumber);
     
         console.log("intial " + computerPickNumber);
