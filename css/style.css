@@ -1,3 +1,21 @@
 body {
     background-image: url("/unit_4_game/assets/shutterstock_706652485.jpg");
 }
+.container{ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50em;
+    border: solid 2px blue;
+
+}
+.button_box{
+    display: flex;
+   justify-content: center;
+   height: 50%;
+
+    border: solid 2px greenyellow;
+}
+
+.button { border: solid 2px red;
+}
