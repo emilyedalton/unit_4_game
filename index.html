@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel ="stylesheet" type ="text/css" href = "css/reset.css">
     <link rel ="stylesheet" type ="text/css" href = "css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cabin+Sketch" rel="stylesheet">
 </head>
 <body>
- <h1 class = "headertext">Object Collector</h1>
 
    <div class = "container">
-
+    <h1 class = "headertext">Object Collector</h1>
+<div class ="howto"><p>Each object is randomly assigned a value. Click on each one and see if you can add them up to match the number!</p></div>
     <div id="wins"></div>
     <div id="losses"></div>    
 
@@ -20,23 +21,25 @@
 
 <div class = button_box> 
 <div class = "button">
-<img src ="/unit_4_game/assets/oblique.png" class="Ruby">
+<img src ="/unit_4_game/assets/oblique.png" class="Ruby" alt ="drawing1">
 </div>
 <div class = "button">
-<img src = "/unit_4_game/assets/square.png" class="Emerald">
+<img src = "/unit_4_game/assets/square.png" class="Emerald" alt ="drawing2">
 </div>
 <div class = "button">
-<img src = "/unit_4_game/assets/pentagon.png" class="Diamond">
+<img src = "/unit_4_game/assets/pentagon.png" class="Diamond" alt="drawing3">
 </div>
 <div class ="button">
-<img src = "/unit_4_game/assets/triangle.png" class ="Opal">
+<img src = "/unit_4_game/assets/triangle.png" class ="Opal" alt = "drawing4">
 </div>
 
 </div> <!-- end button box  -->
 <div id="userTotalScore"></div>
-<div id = "start_button"><h2>Start Game</h2></div>
+
+<div id = "start_button">Start Game</div>
 
 </div>  <!-- end main container  -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="/unit_4_game/javascript/game.js"></script>

@@ -25,7 +25,7 @@ $(document).ready(function () {
 
    // initializes each crystal variable and computer selected number to a random number
     //It sets the totalScore to 0. It outputs the computer picked number to the div. 
-    //this preserves all global variables to be unchanged.
+    // preserves all global variables.
     function initializeGame() {
         //these global variables below are set and preserved for the game.
         crystal1Rand = Math.floor(Math.random() * 12) + 1;
@@ -37,7 +37,7 @@ $(document).ready(function () {
         totalScore = 0;
     
         //user sees  see the computer seleced number
-        $("#newComputerPickNumber").html(computerPickNumber);
+        $("#newComputerPickNumber").html("Your number to match:" +" " + computerPickNumber);
     
         console.log("intial " + computerPickNumber);
     
@@ -78,15 +78,16 @@ $(document).ready(function () {
     // Start button runs initializeGame function. Docuument onload wasnt working for this. 
 
     $("#start_button").on("click", function () {
-        $("#start_button").html("<h2>Reset Game</h2>");
+        $("#start_button").text("Reset Game");
         initializeGame();
+      
     });
 
     $(".Ruby").on("click", function () {
         totalScore += crystal1Rand;
         console.log("I am your first random number  " + crystal1Rand);
         console.log("your new score is " + totalScore);
-        //displays the total score to the user. Need to find a fancier way of doing this. 
+        //displays the total score to the user.
         $("#userTotalScore").html(totalScore);
         // After every button click game has to check the status of wins or losses.
         checkStatus();
