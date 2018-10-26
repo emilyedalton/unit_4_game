@@ -78,6 +78,7 @@ $(document).ready(function () {
     // Start button runs initializeGame function. Docuument onload wasnt working for this. 
 
     $("#start_button").on("click", function () {
+        $("#start_button").html("<h2>Reset Game</h2>");
         initializeGame();
     });
 
@@ -107,7 +108,7 @@ $(document).ready(function () {
         console.log("I am your third random number  " + crystal3Rand)
         totalScore += crystal3Rand;
         console.log("your new score is " + totalScore);
-        //Emily, this display the total number the user clicks
+        // this displays the total number the user clicks
         $("#userTotalScore").html(totalScore);
         checkStatus();
     });
