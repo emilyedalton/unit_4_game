@@ -2,7 +2,7 @@
 // global varibles 
 //random number that will be what the player is trying to match
 var goalRandom = 0;
-//A random number generated that will go into the crystals. Not sure if I even need this variable
+//A random number generated that will go into the crystals. 
 var totalScore = 0;
 var wins = 0;
 var losses = 0;
@@ -19,7 +19,6 @@ var computerPickNumber = 0;
 
 
 
-//Emily document.ready loads all the html element first before it call all the jquery libraries.
 $(document).ready(function () {
 
 
@@ -79,7 +78,7 @@ $(document).ready(function () {
 
     $("#start_button").on("click", function () {
         $("#start_button").text("Reset Game");
-        initializeGame();
+        GameReset();
       
     });
 

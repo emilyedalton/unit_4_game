@@ -2,8 +2,11 @@ body {
     background-image: url("/unit_4_game/assets/shutterstock_706652485.jpg");
     
 }
-
-.container{ display: flex;
+p{ 
+    padding: 1em;
+}
+.container{ 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -24,16 +27,29 @@ body {
    justify-content: center;
    height: 50%;
 }
-
-.totalscorebox{
-align-self: center;
-
+.lowerBox{
+display:flex;
+justify-content: space-evenly;
 }
+.winsLosses{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.scorecontain{ 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
 
 #start_button{
     font-family: 'Cabin Sketch', cursive;
-    font-size: 6em; 
+    font-size: 4em; 
     font-weight:bold;
+    margin-top: 1em;
     
 
 }
@@ -47,8 +63,7 @@ align-self: center;
 #userTotalScore{
 
     font-family: 'Archivo Black', sans-serif;
-    font-size: 2em;
-    padding: .2em;
+    font-size: 4em;
 
 
 }
