@@ -34,7 +34,8 @@ $(document).ready(function () {
         crystal4Rand = Math.floor(Math.random() * 12) + 1;
         computerPickNumber = Math.floor((Math.random() * (120 - 19) + 19));
         totalScore = 0;
-    
+        $("#userTotalScore").text("");
+
         //user sees  see the computer seleced number
         $("#newComputerPickNumber").html("Your number to match:" +" " + computerPickNumber);
     
@@ -42,6 +43,7 @@ $(document).ready(function () {
     
     
     }
+
 
     //Checks the status of wins or losses.
     function checkStatus() {
@@ -69,7 +71,6 @@ $(document).ready(function () {
     // for some reason, total score isn't bouncing back to 0 with initializeGame() so I added it here. 
     function GameReset() {
         initializeGame();
-        totalScore =0;
 
     }
     //begin game 
