@@ -30,17 +30,22 @@ p{
 .lowerBox{
 display:flex;
 justify-content: space-evenly;
+
 }
 .winsLosses{ 
     display: flex; 
     flex-direction: column;
     justify-content: flex-end;
+    min-width: 15%;
+
+
 }
 
 .scorecontain{ 
     display: flex; 
     flex-direction: column;
     justify-content: flex-end;
+    min-width: 15%;
 }
 
 
@@ -53,11 +58,20 @@ justify-content: space-evenly;
     
 
 }
- #wins, #losses, #newComputerPickNumber {
+ #wins, #losses {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2em;
     margin-bottom: .5em;
     
+
+}
+#newComputerPickNumber{
+
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    margin-bottom: .5em;
+    min-height: 10%;
+
 
 }
 #userTotalScore{
