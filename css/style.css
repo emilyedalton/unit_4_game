@@ -2,9 +2,7 @@ body {
     background-image: url("/unit_4_game/assets/shutterstock_706652485.jpg");
     
 }
-p{ 
-    /* padding: 1em; */
-}
+
 .container{ 
     display: flex;
     flex-direction: column;
@@ -16,7 +14,7 @@ p{
 
 .headertext{
     font-family: 'Cabin Sketch', cursive;
-    font-size: 6em; 
+    font-size: 4rem; 
 }
 .howto{
     font-family: 'Archivo Black', sans-serif;
@@ -59,9 +57,9 @@ width: 100%;
 
 #start_button{
     font-family: 'Cabin Sketch', cursive;
-    font-size: 4em; 
+    font-size: 4rem; 
     font-weight:bold;
-    margin-top: 1em;
+    margin-top: 1rem;
     
 
 }
