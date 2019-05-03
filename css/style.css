@@ -3,14 +3,14 @@ body {
     
 }
 p{ 
-    padding: 1em;
+    /* padding: 1em; */
 }
 .container{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* height: 50em; */
+    height: 100vh; 
 
 }
 
@@ -21,15 +21,20 @@ p{
 .howto{
     font-family: 'Archivo Black', sans-serif;
 
+
 }
 .button_box{
     display: flex;
    justify-content: center;
    height: 50%;
+
 }
 .lowerBox{
 display:flex;
 justify-content: space-evenly;
+width: 100%;
+
+
 
 }
 .winsLosses{ 
@@ -39,6 +44,7 @@ justify-content: space-evenly;
     min-width: 15%;
 
 
+
 }
 
 .scorecontain{ 
@@ -46,6 +52,7 @@ justify-content: space-evenly;
     flex-direction: column;
     justify-content: flex-end;
     min-width: 15%;
+
 }
 
 
